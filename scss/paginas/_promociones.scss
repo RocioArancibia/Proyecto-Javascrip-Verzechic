@@ -1,0 +1,27 @@
+.contenedorPromociones {
+  width: 250px;
+  margin: auto;
+  margin-top: 10%;
+}
+@include mediaQuery(tablet) {
+  .contenedorPromociones {
+    width: 400px;
+    margin-top: 5%;
+  }
+}
+@include mediaQuery(desktop) {
+  .textoPrimerSubtitulo {
+    text-align: center;
+  }
+
+  .subtituloSegundo {
+    text-align: center;
+  }
+
+  /* Carrosel promociones */
+  .contenedorPromociones {
+    width: 600px;
+    margin: auto;
+    margin-top: 1%;
+  }
+}

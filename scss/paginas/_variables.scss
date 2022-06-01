@@ -1,0 +1,58 @@
+/* Color pallete */
+$colores: (
+  principal: #def9f9,
+  secundario: #12909e,
+  tercero: #fff,
+  cuarto: #7dbfc4,
+  backMain: #ecf5f5,
+  font: #212529,
+  backFooter: #0000008c,
+);
+
+$redes: (
+  whatsapp: #25d366,
+  instagram: #833ab4,
+  facebook: #3b5998,
+  correo: #0072c6,
+);
+
+/* extend */
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+}
+
+%flexRow {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexbox($direction, $justify, $content, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-content: $content;
+  flex-wrap: $wrap;
+}
+
+@mixin mediaQuery($diseñoPantalla) {
+  @if $diseñoPantalla == desktop {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
+  } @else if $diseñoPantalla == tablet {
+    @media screen and (min-width: 700px) and (max-width: 800px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: 500px) {
+    }
+  }
+}

@@ -1,0 +1,523 @@
+/* Color pallete */
+/* extend */
+/* para llamar al extend
+@extend %flexColumn;
+
+@extend %flexRow;
+
+/* mixins */
+/* para llamarlo
+@include flexbox(column, space-between, nowrap)
+
+
+    @include flexbox(row, space-around, space-around,nowrap);
+
+PARA MEDIA QUERYS
+
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* Mobile */
+.btnNav {
+  margin-right: 5%; }
+
+.contenedorLogo {
+  margin-left: 5%; }
+  .contenedorLogo .logo {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white; }
+
+.desplegableNav {
+  margin-right: 5%; }
+
+.btnWhatsapp {
+  opacity: 0; }
+
+.botonNav {
+  border: none;
+  background-color: white; }
+
+.dropdown-item a {
+  color: #212529; }
+
+/* Web */
+@media screen and (min-width: 1000px) {
+  .contenedorItems {
+    margin-left: 20%; }
+  .contenedorLogo .logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white; }
+  /* Desplegable */
+  .dropdown-toggle::after {
+    transition: transform 0.15s linear; }
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px); }
+  .dropdown-menu {
+    margin-top: 0; }
+  /* Boton  Saca tu turno*/
+  .btnWhatsapp {
+    background-color: #def9f9;
+    text-align: center;
+    border-radius: 5%;
+    opacity: 1; }
+    .btnWhatsapp:hover {
+      background-color: #25d366;
+      transition: transform 0.5s ease-in-out; }
+    .btnWhatsapp .turno {
+      color: #212529;
+      padding: 0; }
+      .btnWhatsapp .turno:hover {
+        color: white;
+        transition: transform 0.5s ease-in-out; }
+  /* ANIMACION linea al pasar el mouse en el nav */
+  .nav-link {
+    position: relative;
+    display: block; }
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #def9f9, #12909e);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.5s ease-in-out; }
+    .nav-link:hover::before {
+      transform: scaleX(1); } }
+
+.contenedorRedes {
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap; }
+  .contenedorRedes .itemFooter {
+    color: #fff; }
+
+.redes {
+  color: #212529; }
+
+.navFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; }
+  .navFooter .itemFooter {
+    color: #fff; }
+
+.copyright {
+  text-align: center; }
+
+/* Web */
+@media only screen and (min-width: 1000px) {
+  .navFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap; }
+  .redes {
+    margin: 50px; }
+  .contenedorRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; } }
+
+.correo:hover {
+  color: #0072c6;
+  transition: 0.2s; }
+
+.whatsapp:hover {
+  color: #25d366;
+  transition: 0.2s; }
+
+.facebook:hover {
+  color: #3b5998;
+  transition: 0.2s; }
+
+.instagram:hover {
+  color: #833ab4; }
+
+/* Mobile first */
+.contenedorCarrosel {
+  margin-top: 150px; }
+
+.seccionIndex {
+  display: flex;
+  flex-direction: column;
+  margin: 5%; }
+  .seccionIndex .tituloSecundario {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 8% 8% 1% 8%; }
+  .seccionIndex .imagenSeccion {
+    width: 90%;
+    object-fit: cover;
+    padding: 2%;
+    margin: auto; }
+  .seccionIndex .textoSeccion {
+    font-size: 20px;
+    width: 80%;
+    padding: 2%;
+    margin: auto; }
+
+/* tablet */
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .contenedorCarrosel {
+    height: 300px; }
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.75; } }
+
+@media only screen and (min-width: 1000px) {
+  .contenedorCarrosel {
+    height: 400px; }
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover; }
+  .seccionIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%; }
+    .seccionIndex:first-child {
+      background-color: #def9f9; }
+    .seccionIndex:last-child {
+      background-color: #def9f9; }
+    .seccionIndex .tituloSecundario {
+      width: 135vh;
+      text-align: center;
+      font-size: 35px;
+      font-weight: 700;
+      padding: 8% 8% 1% 8%; }
+    .seccionIndex .imagenSeccion {
+      width: 40%;
+      object-fit: cover;
+      padding: 2%;
+      margin: auto; }
+    .seccionIndex .textoSeccion {
+      font-size: 20px;
+      width: 40%;
+      padding: 2%;
+      margin: auto; } }
+
+/* Mobile */
+.contenedorPeluqueria {
+  background-color: #ecf5f5;
+  padding-top: 20%; }
+
+.tituloPagina {
+  text-align: center;
+  font-weight: 900; }
+
+.textoPrimerSubtitulo {
+  margin: 5%;
+  text-align: center; }
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100; }
+
+.contenedorCards {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+
+.contenedorCards .card {
+  width: 330px;
+  height: 540px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s; }
+
+.contenedorCards .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.contenedorCards .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 60%; }
+
+.contenedorCards .card h3 {
+  font-weight: 600; }
+
+.contenedorCards .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300; }
+
+.contenedorCards .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db; }
+
+/* Web */
+@media only screen and (min-width: 1000px) {
+  .contenedorPeluqueria {
+    padding-top: 5%;
+    margin: 0;
+    background-color: #ecf5f5; }
+  .textoPrimerSubtitulo {
+    font-size: 20px; }
+  .tituloPagina {
+    padding: 5% 0 0 0;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+  .textoPrimerSubtitulo {
+    margin: 5%; } }
+
+.contenedorPromociones {
+  width: 250px;
+  margin: auto;
+  margin-top: 10%; }
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .contenedorPromociones {
+    width: 400px;
+    margin-top: 5%; } }
+
+@media only screen and (min-width: 1000px) {
+  .textoPrimerSubtitulo {
+    text-align: center; }
+  .subtituloSegundo {
+    text-align: center; }
+  /* Carrosel promociones */
+  .contenedorPromociones {
+    width: 600px;
+    margin: auto;
+    margin-top: 1%; } }
+
+.encabezadoContacto {
+  background-color: #def9f9;
+  color: #212529;
+  padding-bottom: 10px; }
+
+.tituloPagina {
+  padding-top: 120px;
+  font-size: 25px;
+  margin-bottom: 0%;
+  font-weight: 900;
+  margin-top: 0; }
+
+.textoPrimerSubtitulo {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200; }
+
+.redireccionarForm a {
+  font-weight: 700;
+  color: #212529; }
+
+.redireccionarWhatsapp a {
+  font-weight: 700;
+  color: #212529; }
+  .redireccionarWhatsapp a:hover {
+    color: #25d366; }
+
+.contenedorContacto {
+  background-color: #fff;
+  padding-bottom: 75px; }
+  .contenedorContacto .encabezadoRedes {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 200px auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center; }
+  .contenedorContacto .itemContactoIcono {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center; }
+    .contenedorContacto .itemContactoIcono .icnFacebook {
+      color: #12909e; }
+      .contenedorContacto .itemContactoIcono .icnFacebook:hover {
+        color: #3b5998; }
+
+.icnInstagram {
+  color: #12909e; }
+  .icnInstagram:hover {
+    color: #833ab4; }
+
+.encabezadoRedes {
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  padding-top: 100px; }
+
+.contenedorFormulario {
+  background-color: #fff; }
+  .contenedorFormulario form {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    margin: 0 auto; }
+  .contenedorFormulario .formulario {
+    margin-top: 6%; }
+    .contenedorFormulario .formulario .contenidoFormulario {
+      font-family: "Poiret One", cursive;
+      font-size: 20px;
+      border: none;
+      padding: 2% 5%; }
+    .contenedorFormulario .formulario .botonContacto {
+      font-size: 20px;
+      text-align: center;
+      border: solid 1px black;
+      background-color: #12909e;
+      color: #fff;
+      margin: 5% 36%; }
+
+/*VERSION TAB contacto.html*/
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .contenedorPeluqueria {
+    margin: 0;
+    padding: 0; }
+  .encabezadoContacto {
+    margin: 0;
+    padding-top: 170px; }
+  .tituloPagina {
+    margin: 0;
+    padding: 0; }
+  .mapaContacto {
+    margin-top: 50px;
+    width: 600px;
+    height: 400px; }
+  .contenedorFormulario {
+    background-color: #fff; }
+    .contenedorFormulario form {
+      border-left: solid 1px black;
+      border-right: solid 1px black;
+      border-bottom: solid 1px black;
+      max-width: 60%;
+      margin: 0 auto; }
+    .contenedorFormulario .encabezadoRedes:last-child {
+      margin-bottom: 20; }
+    .contenedorFormulario .formulario {
+      margin-top: 6%; }
+      .contenedorFormulario .formulario .contenidoFormulario {
+        font-family: "Poiret One", cursive;
+        font-size: 20px;
+        border: none;
+        padding: 2% 5%; }
+      .contenedorFormulario .formulario .botonContacto {
+        font-size: 20px;
+        text-align: center;
+        border: solid 1px black;
+        background-color: #12909e;
+        color: #fff;
+        margin: 5% 40%; } }
+
+/*VERSION WEB contacto.html*/
+@media only screen and (min-width: 1000px) {
+  .encabezadoContacto {
+    background-color: #def9f9;
+    color: #212529;
+    padding-bottom: 20px; }
+  .tituloPagina {
+    padding-top: 170px;
+    font-size: 35px;
+    margin-bottom: 0%;
+    font-weight: 900;
+    margin-top: 0; }
+  .textoPrimerSubtitulo {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200; }
+  .contenedorContacto {
+    background-color: #fff;
+    padding-bottom: 75px; }
+    .contenedorContacto .encabezadoRedes {
+      font-size: 35px;
+      font-weight: 900;
+      padding: 200px auto;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      width: 100%;
+      text-align: center; }
+    .contenedorContacto .itemContactoIcono {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-content: center; }
+      .contenedorContacto .itemContactoIcono .iconoWhatsapp:hover {
+        color: #25d366; }
+      .contenedorContacto .itemContactoIcono .iconoWhatsapp .iconoInstagram:hover {
+        color: #833ab4; }
+  .encabezadoRedes {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    padding-top: 100px; }
+  .mapaContacto {
+    padding: 2% 2% 0 2%;
+    width: 75%;
+    height: 400px; }
+  .contenedorFormulario {
+    background-color: #fff; }
+    .contenedorFormulario form {
+      border-left: solid 1px black;
+      border-right: solid 1px black;
+      border-bottom: solid 1px black;
+      max-width: 60%;
+      margin: 0 auto; }
+    .contenedorFormulario .encabezadoRedes:last-child {
+      margin-bottom: 20; }
+    .contenedorFormulario .formulario {
+      margin-top: 6%; }
+      .contenedorFormulario .formulario .contenidoFormulario {
+        font-family: "Poiret One", cursive;
+        font-size: 20px;
+        border: none;
+        padding: 2% 5%; }
+      .contenedorFormulario .formulario .botonContacto {
+        font-size: 20px;
+        text-align: center;
+        border: solid 1px black;
+        background-color: #12909e;
+        color: #fff;
+        margin: 5% 45%; } }
