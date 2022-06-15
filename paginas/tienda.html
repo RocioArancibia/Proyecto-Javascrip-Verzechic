@@ -122,11 +122,14 @@
               </li>
             </ul>
 
+
             <li class="nav-item dropdown">
-              <img src="../imagenes/card.png" class="nav-link dropdown-toggle img-fluid" height="50px" width="50px"
-                href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
-              <div id="carrito" class="dropdown-menu">
-                <table id="lista-carrito" class="table">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <div id="carrito" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <table id="lista-carrito" class="table dropdown-item">
                   <thead>
                     <tr>
                       <th>Imagen</th>
@@ -137,12 +140,14 @@
                   </thead>
                   <tbody></tbody>
                 </table>
-                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                <a href="#" id="procesar-pedido" class="btn btn-success btn-block">Procesar
-                  Compra</a>
+                <div class="d-flex justify-content-around">
+                  <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="btn btn-success btn-block">Procesar
+                    Compra</a>
+                </div>
               </div>
-          </div>
-          </li>
+            </li>
+
           </div>
         </div>
       </div>
@@ -159,9 +164,12 @@
       <h1 class="tituloPagina">Tienda virtual</h1>
       <p class=" lead textoPrimerSubtitulo">Agrega tus productos al carrito para hacer tu Compra</p>
     </section>
+
     <div class="contenedorCards" id="lista-productos">
       <div class="d-flex bd-highlight text-center">
         <div class="card p-2 flex-fill bd-highlight">
+
+          <!-- Card -->
           <div class="card-header">
             <h4 class="my-0 font-weight-bold">Lifting de pestanas</h4>
           </div>
@@ -175,12 +183,14 @@
               <li>A coordinar con el salón</li>
 
             </ul>
-            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+            <a href="" class="btn btn-light btn-outline-primary agregar-carrito" data-id="1">Comprar</a>
           </div>
         </div>
+
+        <!-- Card -->
         <div class="card p-2 flex-fill bd-highlight">
           <div class="card-header">
-            <h4 class="my-0 font-weight-bold">Depilacion definitiva</h4>
+            <h4 class="my-0 font-weight-bold">Depilación definitiva</h4>
           </div>
           <div class="card-body">
             <img src="../imagenes/estetica-3-depilacion-definitiva.jpg" alt="Depilacion definitiva"
@@ -190,7 +200,7 @@
               <li>Valido por una sesión</li>
               <li>A coordinar con el salón</li>
             </ul>
-            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+            <a href="" class="btn btn-light btn-outline-primary agregar-carrito" data-id="1">Comprar</a>
           </div>
         </div>
 

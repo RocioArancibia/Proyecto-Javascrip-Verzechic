@@ -193,6 +193,7 @@ class Carrito {
       });
     } else {
       location.href = "../paginas/compra.html";
+
     }
   }
 

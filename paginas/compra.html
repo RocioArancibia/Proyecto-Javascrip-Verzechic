@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verzechic Peluqueria y estetica | Tienda</title>
+  <!-- SEO -->
+  <meta name="description"
+    content="Somos una peluquería y estética de Córdoba con el mejor equipo de profesionales y el valor agregado de un servicio en constante proceso de renovación y creatividad">
+  <meta name="keywords"
+    content="peluqueria, estetica, cordoba, Verzechic, Veronica Zegarra, color, estilo, corte, pelo, recomendacion, mejores, alisado, color, depilacion, belleza, mujer">
+
+  <!-- Link a bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Link a css -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- Link a font awesome -->
+  <script src="https://kit.fontawesome.com/1ce953ece8.js" crossorigin="anonymous"></script>
+
+  <!-- Link a google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Sail&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<!-- NAV BAR -->
+
+<body class="contenedorGrid">
+  <header class="contenedorGridH">
+    <nav class="navbar navbar-expand-lg navbar-light navbarlogo bg-navbar fixed-top bg-white contenedorNav ">
+      <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand contenedorLogo" href="../index.html"><img src="../imagenes/logo.jpg" alt="Logo"
+            class="img-fluid logo">
+        </a>
+        <button class="navbar-toggler btn btnNav" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header desplegableNav">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Verzechic</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body contenedorItems">
+            <ul class="navbarprincipal navbar-nav ml-auto ">
+              <!-- Inicio -->
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <!-- Peluqueria -->
+
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Peluquería</a>
+                  </button>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Alisado</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Coloración</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Balayage</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte
+                          infantil</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte
+                          Femenino</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./peluqueria.html">Corte Masculino y
+                          Barbería</a></button></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Estetica -->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link link-menu-dux dropdown-toggle" href="./estetica.html">Estética</a>
+                  </button>
+                  <ul class="dropdown-menu" data-animation="center" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Lifting de
+                          pestañas</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Limpieza
+                          facial</a></button>
+                    </li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Depilación de rostro con
+                          cera</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Depilación
+                          definitiva</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Body Up</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./estetica.html">Crioliposis</a></button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Promociones -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="./promociones.html">Promociones</a>
+              </li>
+
+              <!-- Contacto-->
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <!-- Tienda -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Fin del contenedor Nav -->
+  </header>
+  <!--fin del header-->
+
+  <br>
+
+  <main>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col">
+          <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+          <form id="procesar-pago" action="#">
+            <div class="form-group row">
+              <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+              <div class="col-12 col-md-10">
+                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+              </div>
+            </div>
+
+            <div id="carrito" class="table-responsive">
+              <table class="table" id="lista-compra">
+                <thead>
+                  <tr>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Sub Total</th>
+                    <th scope="col">Eliminar</th>
+                  </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                  <th scope="col">
+                    <p id="subtotal"></p>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">IVA:</th>
+                  <th scope="col">
+                    <p id="iva"></p>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+                <tr>
+                  <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                  <th scope="col">
+                    <p id="total"></p>
+                  </th>
+                  <!-- <th scope="col"></th> -->
+                </tr>
+
+              </table>
+            </div>
+
+            <div class="row justify-content-center" id="loaders">
+              <a id="cargando"><i class="fas fa-spinner"></i></a>
+            </div>
+
+            <div class="row justify-content-between">
+              <div class="col-md-4 mb-2">
+                <a href="tienda.html" class="btn btn-info btn-block">Seguir comprando</a>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <a href="" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/compra.js"></script>
+
+</body>
+
+</html>
