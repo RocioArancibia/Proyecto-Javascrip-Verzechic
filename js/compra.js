@@ -48,3 +48,10 @@ function procesarCompra() {
             timer: 2000
         })
     }
+
+
+    /* obtencion de ip*/
+    fetch('https://apisgratis.com/ip/')
+.then(res => res.json())
+.then(res => console.log(res));
+.catch( err => console.error(err));
